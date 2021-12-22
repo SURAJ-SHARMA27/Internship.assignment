@@ -4,31 +4,31 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
- 
+  
   
 } from "react-router-dom";
-import Home from './components/Home';
-import Contact from './components/Contact';
+
+import Ind from "./components/Ind";
+import Graph from "./components/Graph"
 
 
 function App() {
   return (
-    <>
-    <Router>
+  <>
+
+ <Router>
      <Switch>
      <Route exact path="/">
-            <Home/>
+            <Ind/>
           </Route>
-          <Route exact path="/contact">
-            <Contact/>
+          <Route exact path="/graph">
+            <Graph/>
           </Route>
      </Switch>
 
     </Router>
-    </>
-   
-      
-  )
+  </>
+  );
 }
 
-export default App
+export default App;
